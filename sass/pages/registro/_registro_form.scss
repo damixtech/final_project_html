@@ -31,10 +31,13 @@ section.form {
             border-radius: 10px;
             background-color: v.$primary_color;
             border: none;
+            width: 100%;
+            height: 30px;
         }
         textarea {
             border-radius: 10px;
             background-color: v.$primary_color;
+            width: 100%;
             &::placeholder {
                 color: white;
             }
@@ -62,6 +65,19 @@ section.form {
             align-items: center;
             fieldset {
                 width: 50%;
+                input {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include mx.breakpoint(desktop) {
+        form {
+            fieldset {
+                width: 40%;
             }
         }
     }
