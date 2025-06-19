@@ -1,13 +1,12 @@
+
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/page_final_project_html/",
-
+  base: "/",
   build: {
     rollupOptions: {
       input: [
         "index.html",
-        "404.html",
         "aviso_legal.html",
         "blog.html",
         "contacto.html",
@@ -18,13 +17,8 @@ export default defineConfig({
         "post_css.html",
         "post_html.html",
         "quienes_somos.html",
-        "registro.html",
+        "registro.html"
       ],
-    },
-  },
-  server: {
-    watch: {
-      usePolling: true,
     },
   },
 });
